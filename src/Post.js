@@ -1,4 +1,4 @@
-export default function Post(){
+export default function Post(postName = "no title", postBody = "no body") {
     return (
         <div style={{
             padding: "10px",
