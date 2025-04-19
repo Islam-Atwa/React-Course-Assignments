@@ -1,4 +1,5 @@
-export default function Post(){
+export default function Post({postName="Defult Post", postBody ="Default Body"}) {
+    
     return (
         <div style={{
             padding: "10px",
@@ -7,10 +8,10 @@ export default function Post(){
             margin: "25px",
         }}
         >
-            <h2>This is the post Title</h2>
+            <h2>{postName}</h2>
 
             <hr/>
-            <p>This is the post body</p>
+            <p>{postBody}</p>
         </div>
     )
 }
