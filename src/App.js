@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import MyButton from './MyButton';
+import MangingState from './MangingState';
+import MangingStateForm from './MangingStateForm';
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +21,9 @@ function App() {
           Learn React
         </a>
         <MyButton/>
+        <MangingState/>
+        <h1>-------- State Forms --------</h1>
+        <MangingStateForm/>
       </header>
     </div>
   );
