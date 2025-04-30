@@ -1,35 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
-import Post from './Post';
-import SideMenu from './SideMenu';
-import TagButton from './TagButton';
+import MyButton from './MyButton';
+import MangingState from './MangingState';
+import MangingStateForm from './MangingStateForm';
+
 function App() {
   return (
     <div className="App">
-      <Header/>
-      
-      {/* Post Container */}
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div
-          style={{ width: "60%", display: "flex", justifyContent: "center" }}
+      <header className="App-header">
+        <img src={logo} className="App-header App-logo" alt="logo"/>
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          {/* == POSTS CONTAINER == */}
-          <div style={{ width: "70%" }}>
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-          </div>
-
-          <div style={{ width: "30%", marginTop: "25px" }}>
-            <SideMenu />
-          </div>
-        </div>
-      </div>
+          Learn React
+        </a>
+        <MyButton/>
+        <MangingState/>
+        <h1>-------- State Forms --------</h1>
+        <MangingStateForm/>
+      </header>
     </div>
   );
 }
