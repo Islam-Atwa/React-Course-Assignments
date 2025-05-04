@@ -14,10 +14,13 @@ export default function List(){
                 onChange={e => setName(e.target.value)}
             />
             <button onClick={()=>{
-                employe.push({
-                    id: nextId++,
-                    name: name,
-                });
+                setEmploye([
+                    ...employe,
+                    {
+                        id: nextId++,
+                        name: name,
+                    }
+                ]);
             }}>Add</button>
             <ul>
                 {employe.map((employe) => (
