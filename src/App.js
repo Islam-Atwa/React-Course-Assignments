@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import RemoveItem from './Array/RemoveItem.js';
 // import UpdatingObjectState from './components/UpdatingObjectState.js';
 // import ArraysInState from './Array/ArraysInState.js';
 
@@ -8,7 +9,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Updateitem/>
+        {/* <Updateitem/> */}
+        <RemoveItem/>
       </header>
     </div>
   );
